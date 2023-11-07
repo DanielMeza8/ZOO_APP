@@ -1,0 +1,14 @@
+body {
+    background-image: url("img/ideogram\ \(4\).jpeg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+   .centrado {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
