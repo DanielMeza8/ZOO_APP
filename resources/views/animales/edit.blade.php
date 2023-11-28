@@ -10,9 +10,9 @@
     <div class="row">
         <div class="col-7 mt-4">
             <div class="centrado mt-4">
-                <div class="card mb-4 mt-4 py-4" style="max-width: 1500px;">
+                <div class="card mb-4 mt-4 py-4 text-white" style="max-width: 1500px; background-color: transparent;">
                     <div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgba(217, 217, 224, 0.349);)">
                             <h2 class="card-title"><strong>Inicio</strong><p><small class="text-muted">"Animales-ZOO"</small></p></h2>
                             <form action="{{ route('animales.update', $idAnimal) }}" method="post">
                                 @csrf
@@ -36,9 +36,14 @@
                                     </div>
                                     <div class="col">
                                         <div class="mb-3">
-                                            <label for="años" class="form-label">Años</label>
-                                            <input type="number" class="form-control" id="años" name="años" aria-describedby="añosHelp" required value="{{$animal->años}}" autocomplete="off">
-                                            <div id="añosHelp" class="form-text">Ingresa el numeros de años del Animal</div>
+                                            <label for="años" class="form-label">Extincion</label>
+                                            <input type="number" class="form-control" id="años" name="años" aria-describedby="añosHelp" required autocomplete="off">
+                                            <select class="form-select" name="extincion" id="extincion">
+                                                @foreach ($extincion as $item)
+                                                    <option value="{{$item}}">{{$item}}</option>
+                                                @endforeach
+                                            </select>
+                                            <div id="añosHelp" class="form-text">El Animal se encuentra en peligro de extincion</div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="pais" class="form-label">Origen</label>
@@ -73,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-outline-warning">Actualizar</button>
+                                    <button class="btn btn-warning">Actualizar</button>
                                 </div>
                             </form>
                         </div>

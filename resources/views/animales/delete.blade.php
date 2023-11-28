@@ -10,14 +10,14 @@
     <div class="row">
         <div class="col-7 mt-4">
             <div class="centrado mt-4">
-                <div class="card mb-4 mt-4 py-4" style="background-color: white">
-                    <div class="card-header">
+                <div class="card mb-4 mt-4 py-4 text-white" style="background-color: transparent">
+                    <div class="card-header" style="background-color: rgba(217, 217, 224, 0.349);)">
                         <div class="d-flex">
                             <div class="p-2 w-100"><strong>Eliminar Animal</strong></div>
                         </div>
                     </div>
                     <div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgba(217, 217, 224, 0.349);)">
                             <br>
                             <div class="row">
                                 <div class="col-sm-12">

@@ -4,6 +4,7 @@ use App\Http\Controllers\AnimalesController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ZoologicosController;
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Stmt\Return_;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('welcome');
 });
+
+
+Route::get('/', function () {
+    return view('index');
+})->name('inicioZOO');
 
 Route::get('/registro', function () {
     return view('registro');
@@ -48,4 +54,12 @@ Route::prefix('animales')->group(function(){
     Route::put('/Actualizar/{id}', [AnimalesController::class, 'update'])->name('animales.update');
     Route::get('/Eliminar/{id}', [AnimalesController::class, 'show'])->name('animales.show');
     Route::delete('/Destruir/{id}', [AnimalesController::class, 'destroy'])->name('animales.destroy');
+});
+
+Route::prefix('zoo')->group(function(){
+    Route::get('/Inicio/{pais}', [ZoologicosController::class, 'zooindex'])->name('zoo.index');
+});
+
+Route::prefix('animals')->group(function(){
+    Route::get('/Inicio{id}', [AnimalesController::class, 'inicio'])->name('animals.inicio');
 });

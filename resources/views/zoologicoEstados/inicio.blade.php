@@ -10,13 +10,10 @@
                 <div class="card mb-4 mt-4 py-4 text-white" style="background-color: transparent">
                     <div>
                         <div class="card-body" style="background-color: rgba(217, 217, 224, 0.349);)">
-                            <div class="d-flex justify-content-end"><a href="{{route('zoologicos.index')}}" class="btn btn-primary mt-4">Atras</a></div>
-                            <h2 class="card-title"><strong>Inicio</strong><p><small class="text-muted">"Animales-ZOO"</small></p></h2>
+                            {{-- <div class="d-flex justify-content-end"><a href="{{route('zoologicos.index')}}" class="btn btn-primary mt-4">Atras</a></div> --}}
+                            <h2 class="card-title"><strong>Inicio</strong><p><small class="">"Animales-ZOO"</small></p></h2>
                             <br>
-                            <div>
-                                <a href="{{route('animales.create', $id)}}" class="btn btn-primary">Agregar Animal</a>
-                            </div>
-                            <div class="table-responsive mt-3">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr class="table-light">
@@ -26,9 +23,7 @@
                                             <th scope="col">Origen</th>
                                             <th scope="col">Habitad</th>
                                             <th scope="col">Alimentacion</th>
-                                            <th scope="col">Editar</th>
-                                            <th scope="col">Eliminar</th>
-                                        </tr>
+                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($animales as $item)
@@ -39,9 +34,7 @@
                                             <td><strong>{{ $item->origen }}</strong></td>
                                             <td><strong>{{ $item->habitad }}</strong></td>
                                             <td><strong>{{ $item->alimentacion }}</strong></td>
-                                            <td><a href="{{route('animales.edit', $item->id)}}" class="btn btn-sm btn-warning">Editar</a></td>
-                                            <td><a href="{{route('animales.show', $item->id)}}" class="btn btn-sm btn-danger">Eliminar</a></td>
-                                        </tr>
+                                         </tr>
                                         @endforeach
                                     </tbody>
                                   </table>

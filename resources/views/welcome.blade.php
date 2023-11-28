@@ -7,16 +7,16 @@
     <div class="row align-items-center">
         <div class="col mt-4">
             <div class="centrado mt-4">
-                <div class="card mb-4 mt-4 pr-4 " style="max-width: 480px;">
+                <div class="card mb-4 mt-4 pr-4 text-white" style="max-width: 480px; background-color: transparent;">
                     <div class="d-flex align-items-center">
                         <div class="flex-shrink-2">
-                            <img src="{{ asset('img/login2.webp') }}" class="img-fluid rounded-start" alt="...">
+                            <img src="{{ asset('img/arbol.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="flex-grow-1 ms-3">
-                            <div class="card-body">
+                            <div class="card-body" style="background-color: rgba(217, 217, 224, 0.349);)">
                                 <h2 class="card-title text-center"><strong>Login</strong></h2>
                                 <p class="card-text text-center">"ZOO"</p>
-                                <p class="card-text"><small class="text-muted">Bienvenido</small></p>
+                                <p class="card-text"><small class="">Bienvenido</small></p>
                                 <form class="py-4" action="{{route('iniciar')}}" method="POST">
                                     @csrf
                                     <div class="mb-3">
@@ -28,7 +28,7 @@
                                         <input type="password" class="form-control" id="password" name="password">
                                     </div>
                                     <div>
-                                        <p>¿No tienes una cuenta? <a href="{{url('/registro')}}">Registrate</a></p>
+                                        <p>¿No tienes una cuenta? <a href="{{url('/registro')}}"><strong>Registrate</strong></a></p>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Entrar</button>
                                 </form>

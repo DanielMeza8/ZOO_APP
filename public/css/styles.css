@@ -1,14 +1,295 @@
-body {
-    background-image: url("img/ideogram\ \(4\).jpeg");
-    background-color: #000000;
+.fondo {
+    background-image: url('/img/animales.jpg');
+    background-color: rgb(2,0,36);
+background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,44,103,1) 44%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
-    background-size: cover;
-   }
+    background-size: auto;
+    background-position: bottom;
+    height: auto;
+    max-width: 100%;
+  }
 
-
+  .fondo2 {
+    background-image: url('/img/arbol.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  
    .centrado {
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
+  
   }
+
+  .img {
+    height: auto;
+    max-width: 100%;
+    }
+
+.estiloMapa path:hover {
+    fill: rgb(54, 48, 14);
+}
+
+.st0 {
+  fill: #7C7C7C;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st1 {
+  fill: #D0186E;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st2 {
+  fill: #D000C1;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st3 {
+  fill: #FFAE45;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st4 {
+  fill: #FD73FF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st5 {
+  fill: #2CD0FC;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st6 {
+  fill: #F1FF7F;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st7 {
+  fill: #058DD0;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st8 {
+  fill: #43D100;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st9 {
+  fill: #92FF79;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st10 {
+  fill: #00276A;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st11 {
+  fill: #C517FF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st12 {
+  fill: #B500A2;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st13 {
+  fill: #F0E700;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st14 {
+  fill: #FF031D;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st15 {
+  fill: #17A317;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st16 {
+  fill: #A249CB;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st17 {
+  fill: #9D1392;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st18 {
+  fill: #7AFF90;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st19 {
+  fill: #B3AE2C;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st20 {
+  fill: #2D30BF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st21 {
+  fill: #7CDD7C;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st22 {
+  fill: #B21010;
+}
+
+.st23 {
+  fill: #EFFF5C;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st24 {
+  fill: #3461FF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st25 {
+  fill: #72DBD8;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st26 {
+  fill: #7C63CC;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st27 {
+  fill: #7CAEEA;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st28 {
+  fill: #EA2EFF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st29 {
+  fill: #C27C7C;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st30 {
+  fill: #8B1F00;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st31 {
+  fill: #FFB6EF;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st32 {
+  fill: #1790FB;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
