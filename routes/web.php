@@ -30,6 +30,10 @@ Route::get('/registro', function () {
     return view('registro');
 });
 
+Route::get('/animalesenextincion', function () {
+    return view('animalesExtincion/index');
+});
+
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/login', [LoginController::class, 'login'])->name('iniciar');
 Route::post('/validar_registro', [LoginController::class, 'registro'])->name('validar_registro');

@@ -47,7 +47,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="col-5 mt-4">
             <div class="centrado mt-4">
@@ -68,6 +67,25 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        @foreach($zoo as $item)
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>{{ $item->nombre }}</strong></h5>
+                        <p class="card-text">
+                            <strong>{{ $item->direccion }}</strong> <br/>
+                            <strong>{{ $item->telefono }}</strong> <br/>
+                            <strong>{{ $item->pais }}</strong>
+                        </p>
+                        <!-- Puedes agregar más contenido aquí según tus datos -->
+                    </div>
+                </div>
+            </div>
+        @endforeach
     </div>
 </div>
 @endsection

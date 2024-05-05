@@ -3,10 +3,10 @@
 @section('titulo', 'Inicio ZOOs')
 
 @section('contenido')    
-<div class="container-fluid text-center">
-    <div class="row text-center">
-        <div class="col-8 mt-4">
-            <div class="card" style="max-width: 700px; background-color: transparent">
+<div class="container-lg">
+    {{-- <div class="row text-center"> --}}
+        {{-- <div class="col-12 mt-4 d-flex justify-content-center"> --}}
+            <div class="card position-absolute top-50 start-50 translate-middle mt-4" style="width: 45rem; background-color: transparent">
                 <div class="card-body" style="background-color: rgba(217, 217, 224, 0.349);)">
                     <h1 class="text-center text-white mt-4" style="font-family: Agbalumo;">ZOOLOGICOS EN MEXICO</h1>
                 <div class="col mt-2">
@@ -1359,8 +1359,8 @@
                 </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4 mt-4">
+        {{-- </div> --}}
+        {{-- <div class="col-4 mt-4">
             <div class="centrado mt-4">
                 <div class="card mb-4 mt-4" style="background-color: transparent">
                     <div class="d-flex align-items-center">
@@ -1370,8 +1370,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> --}}
+    {{-- </div> --}}
 </div>
 @endsection
 

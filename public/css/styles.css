@@ -3,7 +3,7 @@
     background-color: rgb(2,0,36);
 background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,44,103,1) 44%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: bottom;
     height: auto;
     max-width: 100%;
@@ -17,6 +17,15 @@ background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,44,103,1) 44
     height: auto;
     max-width: 100%;
   }
+
+    .f {
+      margin: 0;
+      padding: 0;
+      background-image:  url('/img/paisa.jpg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
   
    .centrado {
     align-items: center;
